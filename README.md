@@ -205,9 +205,9 @@ ADD site /usr/local/nginx/html
 ### PUSH Image to a Registry
 
 ```
-REGISTRY=localhost:5000
-docker tag hello-world $REGISTRY/spiddy/hello-world
-docker push $REGISTRY/spiddy/hello-world
+REGISTRY=[url_to_the_private_repository]:5000
+docker tag hello-world $REGISTRY/[username]/hello-world
+docker push $REGISTRY/[username]/hello-world
 ```
 
 * **tag**: Tag an image into a repository
