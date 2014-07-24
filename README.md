@@ -175,6 +175,8 @@ CMD apachectl start; tail -f /var/log/apache2/access.log
 
 * The **EXPOSE** instructions informs Docker that the container will listen on the specified network ports at runtime
 * The **CMD** instruction sets the command to be executed when running the image
+* The **tail -f /var/log/apache2/access.log** is to avoid that the docker container is shutted down aftee the **CMD** is executed
+
 
 ### BUILD a Static website Image
 
